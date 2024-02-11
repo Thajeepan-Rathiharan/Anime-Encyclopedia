@@ -1,0 +1,473 @@
+.home{
+  height: fit-content;
+  background-image: url("../img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.topic{
+  height: fit-content;
+  background-image: url("../img/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.game{
+  height: fit-content;
+  background-image: url("../img/bg3.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.index{
+  height: fit-content;
+  background-image: url("../img/bg4.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* These classes are in the <body> element of the 3 pages and were made seperate classes so that each page could have a different background image each The .home one is for the 'homepage' page, the topic one is for the 'about the show' page
+and the .index one is for the 'index' page. */
+
+p{
+  color: #FFFFFF;
+  background-color: palevioletred;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 20px;
+  margin: 5px;
+  font-family: Lato;
+  font-weight: 400;
+  text-align: center;
+ }
+
+/* There's a few <p> elements used within the html, but this <p> is for the "About the film" page.
+   The border has been put in place so that it makes the text more visible as the background image would make it hard to read the text without the text boxes.
+   Therefore i've give the border a black outline to make it stand out from the background image.
+   The color I've given the box was coral because I wanted it to match the colour of the background image.
+   Then I've made the text stand out by having it white as it's visible and the text can be read easily.
+   I've aligned the text in the middle so that there's space around it in the box so that it shows it's not squished inside the box.
+   Font weight determines the thickness of the text by using values like lighter, normal, bold, bolder or number values. I used the number 400 which means normal as I just want to keept it simple.
+   Font family gives choices on what type you wan tyour text to show up as, but not all browsers will be able to show the font you want, so I gave 3 options for the broswer to choose from.
+   */
+
+video{
+  margin: 3%;
+  width: 92%;
+}
+
+/* There's only one video element, so I didn't need to use a class or id element.
+   Margin element was used on the video to create space around the video element by creating a border like structure.
+   The width of the video element was adjusted so that it doesn't take up a lot of space on the page, in other words so that it doesn't look squashed by having a wide width.
+   */
+
+#mainheading{
+  font-family: Lato;
+  font-size: 2em;
+  color: #FFFFFF;
+  background-color: #FFA500;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+/* id element was used for the mainheading <div> to show that the elements given to it make it unique as this id belongs to this single element on all 3 pages.
+   I used the colour navy for my title and headings because there's already enough red on the page due to the background image, and as there's less blue I used navy blue for the title and headings. A thing to note is that blue is a colour that's known to be a calming colour.
+   The font size tells the browser how big or small the font needs to be, and I've set it to 1em which is the same as 16px, and that is the default browser font size.
+   For the box going around this element I made the background colour grey so that it stands out from the <p> boxes, and made the colour of the text in this id element red so that there's colours of the superheros suit within my work.
+   The text has been aligned to the centre so that it's the first thing the person looks at in that box, especially that it stands out because of the colour of the text which is blue.
+   */
+
+#heading{
+  color: #FFFFFF;
+  background-color: #FFA500;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 20px;
+  font-family: Lato;
+  text-align: center;
+}
+
+/* The text colour was set to navy so that it stood out against the background-colour of the box/ container and the border style was made solid to make it more visible. The font family was changed to a custom one from the google fonts page
+   which was put into the pages of the website via the style sheet from google fonts for it.
+   */
+
+#contact{
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+/* The colour of the text for these contact links were made black so that they stand out from the light colour(s) in the background image and were centered so that it was under the text and was easy to find. */
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* I used the flex box element here for the navigation tools so that they stand out and it makes the layout easier to use.
+   The value flex is in display as it tells the browser that this element is going to be the way the element is going to be displayed.
+   The direction of the flex box is row as it goes from left to right.
+   */
+
+
+.item{
+  background-color: #FFFF00;
+  font-family: Lato;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 10px;
+}
+
+/* This is the item element which is found within the container element.
+   I chose the colour orange for the box as it is similar to the colour in the background image in the sky, but darker so it stands out from it.
+   */
+
+footer{
+  text-align: center;
+  background-color: orange;
+  border-width: 2px;
+  padding: 20px;
+}
+
+/* For the footer element I've put it at the bottom of the page with
+   The reasoning for the choice of the footer background colour being black is because it's like the shot at the end of a film or cartoon show where they'd have a black screen with the words the end written on it in white text. Where in this case i've just got that the website was made by me at the end.
+   The border being solid wouldn't matter as it's black and so is the colour of the background colour within the box. It would only look different if I were to have a different value for the border style such as dotted or dashed.
+   */
+
+.container2{
+  margin: 150px auto;
+  width: 50%;
+  height: 50%;
+}
+
+/* This element was put into this <div> so that the image gets resized via the height and width.
+   The margin is then set so that there is space created around the element within the <div>.
+   */
+
+body {
+  margin: 0;
+}
+
+/* The margin is used to create space around elements/ contents and in this case the number 0 was used which means that it would automatically margin itself via the width of the element and the container. */
+
+* {
+  box-sizing: border-box;
+}
+
+.imgThumbnail {
+  width: 25%;
+  padding: 20px;
+  margin-left: 60px;
+}
+
+/* The thumbnail of the popups were given a width of 25% so that they're not too big and don't take up too much space on the page. The images were floated from the value 'left' so they lined up together like a grid. */
+
+.popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  padding: 5%;
+}
+
+/* The popup had the same value for the width and height so it was equal and the 'absolute' value for the position means that it will put in position with the nearest thing which in this case will be another image/ set of images. */
+
+.popup img {
+  width: 100%;
+}
+
+/* The image within the pop up was given a width of 100% so that the image was shown in the pop up at full scale. */
+
+.popup .inside {
+  background-color: white;
+  padding: 2%;
+}
+
+/* The inside of the pop up was given a white background using 'background-color' and the padding was set to make space between the border and it's content(s). */
+
+.closeBtn {
+  float: right;
+}
+
+/* *The close button for the pop up was put the the right side using the float element. */
+
+h1{
+  text-align: center;
+  font-family: Lato;
+}
+
+/* This <h1> element has the text put in the center and it's text changed via the text-align and font-family code. */
+
+.social-media{
+  text-align: center;
+}
+
+/* The social media class was given to the second div element for the images to be centered within the page. */
+
+.textbox{
+padding: 1%;
+margin: 1% 0%;
+background-color: #F4DCF2;
+}
+
+.lastbox{
+  background-color: 
+}
+
+  .home{
+  height: fit-content;
+  background-image: url("../img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.topic{
+  height: fit-content;
+  background-image: url("../img/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.game{
+  height: fit-content;
+  background-image: url("../img/bg3.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.index{
+  height: fit-content;
+  background-image: url("../img/bg4.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* These classes are in the <body> element of the 3 pages and were made seperate classes so that each page could have a different background image each The .home one is for the 'homepage' page, the topic one is for the 'about the show' page
+and the .index one is for the 'index' page. */
+
+p{
+  color: white;
+  background-color: palevioletred;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 20px;
+  margin: 5px;
+  font-family: Lato;
+  font-weight: 400;
+  text-align: center;
+ }
+
+/* There's a few <p> elements used within the html, but this <p> is for the "About the film" page.
+   The border has been put in place so that it makes the text more visible as the background image would make it hard to read the text without the text boxes.
+   Therefore i've give the border a black outline to make it stand out from the background image.
+   The color I've given the box was coral because I wanted it to match the colour of the background image.
+   Then I've made the text stand out by having it white as it's visible and the text can be read easily.
+   I've aligned the text in the middle so that there's space around it in the box so that it shows it's not squished inside the box.
+   Font weight determines the thickness of the text by using values like lighter, normal, bold, bolder or number values. I used the number 400 which means normal as I just want to keept it simple.
+   Font family gives choices on what type you wan tyour text to show up as, but not all browsers will be able to show the font you want, so I gave 3 options for the broswer to choose from.
+   */
+
+video{
+  margin: 3%;
+  width: 92%;
+}
+
+/* There's only one video element, so I didn't need to use a class or id element.
+   Margin element was used on the video to create space around the video element by creating a border like structure.
+   The width of the video element was adjusted so that it doesn't take up a lot of space on the page, in other words so that it doesn't look squashed by having a wide width.
+   */
+
+#mainheading{
+  font-family: Lato;
+  font-size: 2em;
+  color: white;
+  background-color: #FFA500;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+/* id element was used for the mainheading <div> to show that the elements given to it make it unique as this id belongs to this single element on all 3 pages.
+   I used the colour navy for my title and headings because there's already enough red on the page due to the background image, and as there's less blue I used navy blue for the title and headings. A thing to note is that blue is a colour that's known to be a calming colour.
+   The font size tells the browser how big or small the font needs to be, and I've set it to 1em which is the same as 16px, and that is the default browser font size.
+   For the box going around this element I made the background colour grey so that it stands out from the <p> boxes, and made the colour of the text in this id element red so that there's colours of the superheros suit within my work.
+   The text has been aligned to the centre so that it's the first thing the person looks at in that box, especially that it stands out because of the colour of the text which is blue.
+   */
+
+#heading{
+  color: white ;
+  background-color: #FFA500;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 20px;
+  font-family: Lato;
+  text-align: center;
+}
+
+/* The text colour was set to navy so that it stood out against the background-colour of the box/ container and the border style was made solid to make it more visible. The font family was changed to a custom one from the google fonts page
+   which was put into the pages of the website via the style sheet from google fonts for it.
+   */
+
+#contact{
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+/* The colour of the text for these contact links were made black so that they stand out from the light colour(s) in the background image and were centered so that it was under the text and was easy to find. */
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* I used the flex box element here for the navigation tools so that they stand out and it makes the layout easier to use.
+   The value flex is in display as it tells the browser that this element is going to be the way the element is going to be displayed.
+   The direction of the flex box is row as it goes from left to right.
+   */
+
+
+.item{
+  background-color: yellow;
+  font-family: Lato;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 10px;
+}
+
+/* This is the item element which is found within the container element.
+   I chose the colour orange for the box as it is similar to the colour in the background image in the sky, but darker so it stands out from it.
+   */
+
+footer{
+  text-align: center;
+  background-color: #FFA500;
+  border-width: 2px;
+  padding: 20px;
+}
+
+/* For the footer element I've put it at the bottom of the page with
+   The reasoning for the choice of the footer background colour being black is because it's like the shot at the end of a film or cartoon show where they'd have a black screen with the words the end written on it in white text. Where in this case i've just got that the website was made by me at the end.
+   The border being solid wouldn't matter as it's black and so is the colour of the background colour within the box. It would only look different if I were to have a different value for the border style such as dotted or dashed.
+   */
+
+.container2{
+  margin: 150px auto;
+  width: 50%;
+  height: 50%;
+}
+
+/* This element was put into this <div> so that the image gets resized via the height and width.
+   The margin is then set so that there is space created around the element within the <div>.
+   */
+
+body {
+  margin: 0;
+}
+
+/* The margin is used to create space around elements/ contents and in this case the number 0 was used which means that it would automatically margin itself via the width of the element and the container. */
+
+* {
+  box-sizing: border-box;
+}
+
+.imgThumbnail {
+  width: 25%;
+  padding: 20px;
+  margin-left: 60px;
+}
+
+/* The thumbnail of the popups were given a width of 25% so that they're not too big and don't take up too much space on the page. The images were floated from the value 'left' so they lined up together like a grid. */
+
+.popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  padding: 5%;
+}
+
+/* The popup had the same value for the width and height so it was equal and the 'absolute' value for the position means that it will put in position with the nearest thing which in this case will be another image/ set of images. */
+
+.popup img {
+  width: 100%;
+}
+
+/* The image within the pop up was given a width of 100% so that the image was shown in the pop up at full scale. */
+
+.popup .inside {
+  background-color: white;
+  padding: 2%;
+}
+
+/* The inside of the pop up was given a white background using 'background-color' and the padding was set to make space between the border and it's content(s). */
+
+.closeBtn {
+  float: right;
+}
+
+/* *The close button for the pop up was put the the right side using the float element. */
+
+h1{
+  text-align: center;
+  font-family: Lato;
+}
+
+/* This <h1> element has the text put in the center and it's text changed via the text-align and font-family code. */
+
+.social-media{
+  text-align: center;
+}
+
+/* The social media class was given to the second div element for the images to be centered within the page. */
+
+.textbox{
+padding: 1%;
+margin: 1% 0%;
+background-color: #FFA500;
+}
+
+/* Text box for the review section size was set via these values and given a colour. */
+
+.finalbox{
+  background-color: #FFA500;
+}
+
+/* The colour of the box for the review box colour was a different colour to the text box set with the colour code. */
+
+.logo{
+  width: 100px;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* The logo had a set size, and moved to the center of the footer under the text. */

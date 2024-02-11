@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Summary of show and characters in the series" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <title> About the Show </title>
+  </head>
+<body class="topic">
+
+  <div>
+  <h1 id="mainheading"> About the Show and Characters </h1>
+</div>
+
+<div class="container">
+  <a href="homepage.html" class="item">Home page</a>
+  <a href="characterpage.html" class="item">About The Show</a>
+  <a href="gamepage.html" class="item">Game</a>
+  <a href="contactspage.html" class="item">Contacts Page</a>
+</div>
+
+<div>
+<p> Naruto Shippuden is the second series of the Naruto anime that follows the main character Naruto Uzumaki on his quest to become Hokage. Unlike the first series, Naruto is now a few years older and has new friends and teachers to help him through his adventure.
+    Later on in the series after the protagonists keep getting stronger gaining new powers, as do the antagonists who are making preperations for a war to take place that could end the ninja world. </p>
+</div>
+
+<p> Below are key characters from the show, click on their image and find out about them.</p>
+
+  <body>
+    <img
+      src="img/naruto1.jpg"
+      class="imgThumbnail"
+      alt="Naruto Uzumaki"
+      id="narutoImage"
+    />
+
+    <!-- This image is what's shown on the page to start with. Clicking the
+         image will show the popup. That's because there's an event listener
+         on the image. This could be more than an image - it could have a
+         title underneath it, a border a little text etc. -->
+
+    <div id="narutoInfo" class="popup">
+
+      <!-- This div is the popup. It's the full size of the screen, with a white
+       background. It has a white content area in the middle
+       that has the contents of the popout. It's hidden by default by setting its
+       display property to none.-->
+
+      <div class="inside">
+        <div id="narutoCloseBtn" class="closeBtn">X</div>
+        <h1>Naruto Uzumaki</h1>
+        <img src="img/naruto2.jpg" alt="Naruto" />
+        <p>
+          Naruto Uzumaki is the main character of the show appearing in episode 1 and is the best friend and rival of Sasuke Uchiha. He's part of Team 7 which is made up of him, Sasuke, Sakura and Kakashi, but Sasuke isn't part of it at the start of the series, so he goes on a quest to get his friend back in the first half of 'Shippuden'. Therefore he undergoes various training exercises with Kakashi and his friends to get stronger and gains new powers also learning to control the tailed beast sealed inside of him. At the time of war near the end of the series, he befriends the tailed beast inside him and gains even more strength and helps Naruto and his friends to hold against the new enemies they face. Hagoromo tells Naruto that he's the reincarnation of his youngest son Ashura Otsuski and explains his new powers he gives him and how he and Sasuke can defeat Kaguya. In the end him and Sasuke become best friends again and bring peacae back to the world.
+        </p>
+        <p>
+          Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=CNWI9lJZ7aw"
+            >Naruto scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+
+      /* In this simple version of a popout we need a pair of functions
+         and a pair of event listeners for each popout. The functions are to
+         hide and show the popout by changing the value of its display property.
+         */
+
+      showGreenpeace = () => {
+        document.getElementById("narutoInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("narutoInfo").style.display = "none";
+      };
+
+      /* There are two event listeners. The first in on the image and runs the
+         function to show the popup. The second is on the close button inside
+         the popup, and runs the function to close the popup.
+         If you wanted to add another image and popup, you'd need to duplicate
+         all of this code, but with new ids and function names for the new
+         popup. */
+
+      document
+        .getElementById("narutoImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("narutoCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+
+    <!-- the </script> tag is used to end the script enabling another <script> to be opened for the other pop ups that will be added on to the page. -->
+
+  </body>
+
+    <body>
+      <img
+        src="img/sasuke1.jpg"
+        class="imgThumbnail"
+        alt="Sasuke Uchiha"
+        id="sasukeImage"
+      />
+      <div id="sasukeInfo" class="popup">
+        <div class="inside">
+          <div id="sasukeCloseBtn" class="closeBtn">X</div>
+          <h1>Sasuke Uchiha</h1>
+          <img src="img/sasuke2.png" alt="Sasuke" />
+          <p>
+            Sasuke Uchiha is introduced in episode 1 in his first appearance as the last Uchiha clan member as he was the only one spared by his brother Itachi Uchiha, who was the reason for the massacre of his clan. This leads him to wanting to get revenge and befriends Naruto, becoming best friends and then rivals at the end of the 'Naruto' series. In the 'Shippuden' series he's introduced again in episode 48 and him and Naruto are fighting in each interaction with each other. Later in the series in the was, Hagoromo explains that Sasuke and Naruto are the reincarnations of Madara and Hashirama and give them his sons Ashura and Indras powers to take down Kaguya and help end the war.
+          </p>
+          <p>
+            Watch the character in action here.
+            <a
+              href="https://www.youtube.com/watch?v=dz8zBdI_LzU&t=9s"
+              >Sasuke scenes from the show</a>
+          </p>
+        </div>
+      </div>
+
+      <script>
+        showGreenpeace = () => {
+          document.getElementById("sasukeInfo").style.display = "block";
+        };
+        hideGreenpeace = () => {
+          document.getElementById("sasukeInfo").style.display = "none";
+        };
+        document
+          .getElementById("sasukeImage")
+          .addEventListener("click", showGreenpeace);
+        document
+          .getElementById("sasukeCloseBtn")
+          .addEventListener("click", hideGreenpeace);
+      </script>
+  </body>
+
+  <body>
+    <img
+      src="img/sakura1.jpg"
+      class="imgThumbnail"
+      alt="Sakura Haruno"
+      id="sakuraImage"
+    />
+    <div id="sakuraInfo" class="popup">
+      <div class="inside">
+        <div id="sakuraCloseBtn" class="closeBtn">X</div>
+        <h1>Sakura Haruno</h1>
+        <img src="img/sakura2.png" alt="Sakura" />
+
+        <p>
+         Sakura Haruno is the third member of Team 7 alongside Naruto, Sasuke and Kakashi. She's the medic of the group who has a crush on Sasuke and does her best to catch up to her teammates strength. Therefore, she goes under training from the Fifth Hokage Tsunade Senju, gaining monster strength enabling her to stand her own ground as well as being a medic. Her first apperance in the show was in episode 1.
+        <p>
+          Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=6M2MLpffrko"
+            >Sakura scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("sakuraInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("sakuraInfo").style.display = "none";
+      };
+      document
+        .getElementById("sakuraImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("sakuraCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+</body>
+
+  <body>
+    <img
+      src="img/hashirama1.jpg"
+      class="imgThumbnail"
+      alt="Hashirama Senju"
+      id="hashiramaImage"
+    />
+    <div id="hashiramaInfo" class="popup">
+      <div class="inside">
+        <div id="hashiramaCloseBtn" class="closeBtn">X</div>
+        <h1>Hashirama Senju</h1>
+        <img src="img/hashirama2.jpg" alt="Hashirama" />
+        <p>
+        Hashirama Senju is the First Hokage who was the rival of Madara Uchiha who were former best friends, but due to the tension between their clans and actions taken by his brother Tobirama Senju, it led to an all out war between the clans where Hashirama and Madara fought till one killed the other. In this case Hashirama won the clans and then after negotiations they were at peace and lived as one in the Hidden Leaf Village. His first appearance was in episode 70 in the 'Naruto' series, but is then bought back during the war to aid Naruto and the others by Orochimaru in the 'Shippuden' series in episode 370. Hashirama is told to be the reincarnation of Ashura Otsuski and rivals with Madara Uchiha in their generation.
+        </p>
+        <p>
+          Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=kffmEwmnBpM"
+            >Hashirama scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("hashiramaInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("hashiramaInfo").style.display = "none";
+      };
+      document
+        .getElementById("hashiramaImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("hashiramaCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/madara1.jpg"
+      class="imgThumbnail"
+      alt="Madara Uchiha"
+      id="madaraImage"
+    />
+    <div id="madaraInfo" class="popup">
+      <div class="inside">
+        <div id="madaraCloseBtn" class="closeBtn">X</div>
+        <h1>Madara Uchiha</h1>
+        <img src="img/madara2.jpg" alt="Madara" />
+        <p>
+        Madara Uchiha is one of the many villains in the show, but the most iconic one because of his entrance into the show in episode 322 when he enters the war. Madara is the only person known to have power that rivals the First Hokage Hashirama Senju and can control a tailed beast with his illusion with his mangekyou sharingans powers. He was the one to save Obito when he was about to die and uses him as a puppet to bring him back to life via 'reanimation' in the war where they go through with their long awaited plan of taking over the world. Madara is told to be the reincarnation of Indra Otsuski in the generation after Ashura and Indras.
+        </p>
+        <p>
+        Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=WsnlrU1uWH0"
+            >Madara scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("madaraInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("madaraInfo").style.display = "none";
+      };
+      document
+        .getElementById("madaraImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("madaraCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/kaguya1.jpg"
+      class="imgThumbnail"
+      alt="Kaguya Otsuski"
+      id="kaguyaImage"
+    />
+    <div id="kaguyaInfo" class="popup">
+      <div class="inside">
+        <div id="kaguyaCloseBtn" class="closeBtn">X</div>
+        <h1>Kaguya Otsuski</h1>
+        <img src="img/kaguya2.png" alt="Kaguya" />
+        <p>
+          Kaguya Otsuski is the mother of Hagoromo and Hamura Otsuski and the overall main antagonist of the show, because if it weren't for her using everyone like puppets via her follower named Black Zetsu who influenced the villains in the show like Indra Otsuski, Madara Uchiha, Obito Uchiha and even Sasuke Uchiha. Her first appearance is in episode 460 where she is unveiled to be the almighty being and become a big threat to Naruto, Sasuke, Sakura and Kakashi, the original Team 7 alongside Obito Uchiha who is aiding them.
+        </p>
+        <p>
+        Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=u93rs7FAShs"
+            >Kaguya scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("kaguyaInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("kaguyaInfo").style.display = "none";
+      };
+      document
+        .getElementById("kaguyaImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("kaguyaCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/ashura1.jpg"
+      class="imgThumbnail"
+      alt="Ashura Otsuski"
+      id="ashuraImage"
+    />
+    <div id="ashuraInfo" class="popup">
+      <div class="inside">
+        <div id="ashuraCloseBtn" class="closeBtn">X</div>
+        <h1>Ashura Otsuski</h1>
+        <img src="img/ashura2.jpg" alt="Ashura" />
+        <p>
+        Ashura Otsuski is the youngest son of Hagoromo Otsuski and younger brother to Indra Otsuski who is heir of the Senju and Uzumaki clan who was the one known to all that put an end to his brothers plans by countering his moves which led to a war between the clans and the brothers themselves. In the end he won with the help of the village and Hagoromo and the world was at peace for a while. His appearance was in episode 465.
+        </p>
+        <p>
+        Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=1M0xmDBT-ME"
+            >Ashura scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("ashuraInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("ashuraInfo").style.display = "none";
+      };
+      document
+        .getElementById("ashuraImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("ashuraCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/indra1.jpg"
+      class="imgThumbnail"
+      alt="Indra Otsuski"
+      id="indraImage"
+    />
+    <div id="indraInfo" class="popup">
+      <div class="inside">
+        <div id="indraCloseBtn" class="closeBtn">X</div>
+        <h1>Indra Otsuski</h1>
+        <img src="img/indra2.jpg" alt="Indra" />
+        <p>
+          Indra Otsuski is the son of Hagoromo Otsuski and brother to Ashura Otsuski who became the enemy of his brother after going to gain power and comes back to wipe out his brother and his former home as his brother is the one in his way of becoming the strongest there is. He was the heir of the Uchiha clan and had the title of 'genius' as he gained the same abilities as his father. His first appearance was in episode 465.
+        </p>
+        <p>
+        Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=AApQ9sqAQrA"
+            >Indra scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("indraInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("indraInfo").style.display = "none";
+      };
+      document
+        .getElementById("indraImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("indraCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <img
+    src="img/hagoromo1.jpg"
+    class="imgThumbnail"
+    alt="Hagoromo Otsuski"
+    id="hagoromoImage"
+  />
+  <div id="hagoromoInfo" class="popup">
+    <div class="inside">
+      <div id="hagoromoCloseBtn" class="closeBtn">X</div>
+      <h1>Hagoromo Otsuski</h1>
+      <img src="img/hagoromo2.jpg" alt="Hagoromo" />
+      <p>
+        Hagoromo Otsuski is one of the two sons of Kaguya Otsuski who is a God that watches over what goes on after him and his brother Hamura Otsuski seal their mother to stop her evil plan. He is the creator of the 9 tailed beasts in the series, where they add up to make the 10 tailed beast which means the end of the world. His first appearance is in episode 461 during the war arc showing his flashback. To aid the heros in the war, he gives Naruto and Sasuke god like abilities that him and his brother Hamura possess and tell them that they're the reincarnations of his sons Ashura and Indra Otsuski.
+      </p>
+      <p>
+      Watch the character in action here.
+        <a
+          href="https://www.youtube.com/watch?v=XdVicQb7AfU"
+          >Hagaromo scenes from the show</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    showGreenpeace = () => {
+      document.getElementById("hagoromoInfo").style.display = "block";
+    };
+    hideGreenpeace = () => {
+      document.getElementById("hagoromoInfo").style.display = "none";
+    };
+    document
+      .getElementById("hagoromoImage")
+      .addEventListener("click", showGreenpeace);
+    document
+      .getElementById("hagoromoCloseBtn")
+      .addEventListener("click", hideGreenpeace);
+  </script>
+</body>
+
+  <body>
+    <img
+      src="img/jiraiya1.jpg"
+      class="imgThumbnail"
+      alt="Jiraiya"
+      id="jiraiyaImage"
+    />
+    <div id="jiraiyaInfo" class="popup">
+      <div class="inside">
+        <div id="jiraiyaCloseBtn" class="closeBtn">X</div>
+        <h1>Jiraiya</h1>
+        <img src="img/jiraiya2.jpg" alt="Jiraiya"/>
+        <p>
+          Jraiya, also known as 'Jiraiya the Gallant' he is one of the Legendary Sannin alongside Tsunade and Orochimaru, a former student of the Third Hokage Hiruzen Sarutobi appears in 'Naruto' in episode 52 where he takes Naruto as his student and teaches him a new technique, and then dies in the 'Shippuden' series in episode 133 going against his former students before Naruto.
+        </p>
+        <p>
+        Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=QlZ-sKG5u7w"
+            >Jiraiya scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("jiraiyaInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("jiraiyaInfo").style.display = "none";
+      };
+      document
+        .getElementById("jiraiyaImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("jiraiyaCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/orochimaru1.jpg"
+      class="imgThumbnail"
+      alt="Orochimaru"
+      id="orochimaruImage"
+    />
+    <div id="orochimaruInfo" class="popup">
+      <div class="inside">
+        <div id="orochimaruCloseBtn" class="closeBtn">X</div>
+        <h1>Orochimaru</h1>
+        <img src="img/orochimaru2.jpg" alt="Orochimaru"/>
+        <p>
+          Orochimaru was the main villain in the first half of the series after his first appearance in episode 27 and he is introduced as the teammate alongside Jiraiya and Tsunade being taught under the Third Hokage Hiruzen Sarutobi. However as he wanted to attain more power and to stop ageing, he turned into a villain constantly getting stopped by Naruto and his friends to not take away his best friend Sasuke Uchiha. In the Shippuden series, he gets killed by Sasuke Uchiha episode 114, then gets revived in episode 341 in the war arc where no one can tell whether his intention to help the others is a good or bad idea, because he is known to be cunning and could switch sides.
+        <p>
+        Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=ilAfjjqHePY"
+            >Orochimaru scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("orochimaruInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("orochimaruInfo").style.display = "none";
+      };
+      document
+        .getElementById("orochimaruImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("orochimaruCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/tsunade1.jpg"
+      class="imgThumbnail"
+      alt="Tsunade"
+      id="tsunadeImage"
+    />
+    <div id="tsunadeInfo" class="popup">
+      <div class="inside">
+        <div id="tsunadeCloseBtn" class="closeBtn">X</div>
+        <h1>Tsunade Senju</h1>
+        <img src="img/tsunade2.jpg" alt="Tsunade" />
+        <p>
+          Tsunade Senju is the grandaughter of the First Hokage Hashirama Senju, due to this she was chosen to become the Fifth Hokage which she accepted after a speech from Naruto from her first appearance in 83. She was one of the Legendary Sannin alongside Jiraiya and Orochimaru who were also the former team under the Third Hokage, Hiruzen Sarutobi. At the end of the first series, she takes Sakura as her student and trains her to become stronger and catch up with her teammates. Later in Shippuden, she goes up against her gandfathers rival and former best friend Madara Uchiha in the war in episode 323.
+        </p>
+        <p>
+        Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=6lUm8VW2FDg"
+            >Tsunade scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("tsunadeInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("tsunadeInfo").style.display = "none";
+      };
+
+      document
+        .getElementById("tsunadeImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("tsunadeCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/kakashi1.jpg"
+      class="imgThumbnail"
+      alt="Kakashi"
+      id="kakashiImage"
+    />
+    <div id="kakashiInfo" class="popup">
+      <div class="inside">
+        <div id="kakashiCloseBtn" class="closeBtn">X</div>
+        <h1>Kakashi Hatake</h1>
+        <img src="img/kakashi2.jpg" alt="Kakashi" />
+        <p>
+          His first appearance was in episode 3. Kakashi Hatake also goes by the name "Copy Ninja of 1000 jutsus", he is the leader of Team 7 which is formed of him, Naruto, Sasuke and Sakura. He was a student of Minato Namikaze, alongside Obito and Rin. His purpose in the show is to help Naruto train to get stronger alongside himself and the others in the village. He gains the ability of the mangekyou sharingan which was gifted to his friend Obito before his death, but later on in the series he finds out Obito was 'Tobi' all along and after fighting they team up again like they once did before and help Naruto put an end to the war fighting Madara and then Kaguya. At the end of the series he becomes the Sixth Hokage.
+        </p>
+        <p>
+          Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=jcwJ_41mCXw"
+            >Kakashi scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("kakashiInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("kakashiInfo").style.display = "none";
+      };
+
+      document
+        .getElementById("kakashiImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("kakashiCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/obito1.jpg"
+      class="imgThumbnail"
+      alt="Obito"
+      id="obitoImage"
+    />
+    <div id="obitoInfo" class="popup">
+      <div class="inside">
+        <div id="obitoCloseBtn" class="closeBtn">X</div>
+        <h1>Obito Uchiha</h1>
+        <img src="img/obito2.jpg" alt="Obito" />
+        <p>
+          Obito Uchiha is one of the main villains in the series who went by the names of Tobi and Madara up until the war where his mask was broken to reveal his identity. He was the classmate of Kakashi and Rin under the lead of Minato, he was in love with Rin but never got his chance to tell her as he witnessed Kakashi kill her from a distance when he was rushing to save her but was too late. Due to this he changed his dream of wanting to become Hokage and went down the path of revenge by plotting against everyone and teaming up with Madara Uchiha. The reason was because Madara was the one to save him when he was crushed by a giant boulder, but later on in the series he finds out Madara lied to him, to use him as his puppet and turns into a good guy aiding Naruto and the others in the war. His first appearance in the show was as Tobi is in episode 139, the episoode where he was revealed to be Obito was in episode 344.
+        </p>
+        <p>
+        Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=JKU8zEZyr4w"
+            >Obito scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("obitoInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("obitoInfo").style.display = "none";
+      };
+
+      document
+        .getElementById("obitoImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("obitoCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/rin1.jpg"
+      class="imgThumbnail"
+      alt="Rin"
+      id="rinImage"
+    />
+    <div id="rinInfo" class="popup">
+      <div class="inside">
+        <div id="rinCloseBtn" class="closeBtn">X</div>
+        <h1>Rin Nohara</h1>
+        <img src="img/rin2.jpg" alt="Rin" />
+        <p>
+          Rin was the former team mate of Kakshi and Obito with Minato as their leader, she was in love with Obito but never mentioned it. Her first appearance was in episode 72 and it was during a flashback showing how the team was formed up to her death in episode 345 later in the series when the flashback is from Obito's view. Her death was due to her having a monster put inside her that took complete control over her by the enemy village trying to use her to destroy the Hidden Leaf, however she jumped into an attack by Kakashi that led him to killing her which was an accident, but she did it on purpose to stop the enemies plan to destroy the village.
+        </p>
+        <p>
+          Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=NiXgqrLjJiA"
+            >Rin scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("rinInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("rinInfo").style.display = "none";
+      };
+
+      document
+        .getElementById("rinImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("rinCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/itachi1.jpg"
+      class="imgThumbnail"
+      alt="Itachi"
+      id="itachiImage"
+    />
+    <div id="itachiInfo" class="popup">
+      <div class="inside">
+        <div id="itachiCloseBtn" class="closeBtn">X</div>
+        <h1>Itachi Uchiha</h1>
+        <img src="img/itachi2.jpg" alt="Itachi" />
+        <p>
+          Itachi Uchiha is the older brother of Sasuke Uchiha, he is the reason for his parents and relatives deaths and portrayed himself as a villain. His first appeaerance was in the epsiode 84 of the 'Naruto' series where he was shown a villain, but later in the 'Shippuden' series, when him and his little brother have a fight and dies, his brother finds out the reason why he killed his parents and why he became a rogue, then sees his brother was never in the wrong and regrets kiling him. After he dies, he comes back in the series through 'reanimation' in episode 298 and puts an end to the 'reanimation' to help end the war and is called a hero by the reanimated Third Hokage.
+        </p>
+        <p>
+        Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=ojR3bLgc2cY"
+            >Itachi scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("itachiInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("itachiInfo").style.display = "none";
+      };
+
+      document
+        .getElementById("itachiImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("itachiCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/minato1.jpg"
+      class="imgThumbnail"
+      alt="Minato"
+      id="minatoImage"
+    />
+    <div id="minatoInfo" class="popup">
+      <div class="inside">
+        <div id="minatoCloseBtn" class="closeBtn">X</div>
+        <h1>Minato Namikaze</h1>
+        <img src="img/minato2.jpg" alt="Minato" />
+        <p>
+        Minato Namikaze is the husband of Kushina Uzumaki and father of Naruto Uzumaki. He was known as the Fourth Hokage nicknamed the 'Yellow Flash of the Hidden Leaf' due to his teleportation technique and speed skills in combat. He was a former student of the Legendary Sannin Jiraiya the Gallant and progresed his way to the highest rank in the village becoming the Fourth Hokage. Sadly he died alongside his wife after saving his son and the Hidden Leaf Village from the rampage of the demonic Nine Tails rampage. His firt appearance in the series was in episode 168 where he talks to Naruto on a seperate occasion from his wife earlier in the series to stop his son from letting the Nine Tails take control over him. He made another appearance in the series when he was bought back to life through 'reanimaion' into the war at episode 372 alongside the previous 3 Hokages to put an end to the war.
+        </p>
+        <p>
+        Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=ojFqpXhOCNs"
+            >Minato scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("minatoInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("minatoInfo").style.display = "none";
+      };
+
+      document
+        .getElementById("minatoImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("minatoCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/kushina1.jpg"
+      class="imgThumbnail"
+      alt="Kushina"
+      id="kushinaImage"
+    />
+    <div id="kushinaInfo" class="popup">
+      <div class="inside">
+        <div id="kushinaCloseBtn" class="closeBtn">X</div>
+        <h1>Kushina Uzumaki</h1>
+        <img src="img/kushina2.jpg" alt="Kushina" />
+        <p>
+          Kushina Uzumaki is the wife of Minato Namikaze, and the mother of Naruto Uzumaki. She was sadly killed with Minato after giving birth to Naruto due to the incident that occured during the demonic Nine Tails rampage. She was introduced into episode 246 where she met her son Naruto in the spirit realm when he was training to gain control of the demonic Nine Tails beast inside of him.
+        </p>
+        <p>
+        Watch the character in action here.
+          <a
+            href="https://www.youtube.com/watch?v=T5XS4nUGebc"
+            >Kushina scenes from the show</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("kushinaInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("kushinaInfo").style.display = "none";
+      };
+
+      document
+        .getElementById("kushinaImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("kushinaCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <footer> Website made by T.R Creations
+           2022 Copyrights
+         <img class="logo" src="img/logo.jpg" alt="logo">
+       </footer>
+</body>
+</html>

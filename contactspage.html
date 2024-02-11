@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contacts page for the website with contacts and social media pages" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
+    <title> Index </title>
+  </head>
+<body class="index">
+
+<h1 id="mainheading"> Contacts Page </h1>
+
+<div class="container">
+  <a href="homepage.html" class="item">Home page</a>
+  <a href="characterpage.html" class="item">About The Show</a>
+  <a href="gamepage.html" class="item">Game</a>
+  <a href="contactspage.html" class="item">Contacts Page</a>
+</div>
+
+<p> Email the creator of the website</p>
+<a href="mailto:p2587267@my365.dmu.ac.uk" id="contact"><img src="img/outlook.png" alt="email"></a>
+<p> Phone the company </p>
+<a href="tel:+441126207808" id="contact"><img src="img/call.png" alt="call"></a>
+
+<div class="social-media">
+<p> Get in contact with the manga creator and see what he's up to! </p>
+<a href="https://twitter.com/thekishimoto?lang=en"><img src="img/t.jpg" alt="Twitter"/></a>
+</div>
+
+<!-- The footer was added here for the contact information to seperate it from the rest of the content on the page-->
+
+<p> Official Naruto Shippuden Social Media Pages </p>
+
+<!-- Adding social media links with an image so that they can click the image and it takes them to the page which would look more stylish compared to having a link there making the website look lame. -->
+<div class="social-media">
+<a href="https://www.facebook.com/narutoofficialsns/"><img src="img/fb.jpg" alt="Facebook"/></a>
+<a href="https://twitter.com/narutoshippuden?lang=en"><img src="img/t.jpg" alt="Twitter"/></a>
+<a href="https://www.instagram.com/naruto_shippuden/?hl=en"><img src="img/ig.jpg" alt="Instagram"/></a>
+<a href="https://www.reddit.com/r/narutoshippuden/"><img src="img/r.jpg" alt="Reddit"/></a>
+
+<!-- On the index page, for the footer I decided to change it up and add extra information on it that you would see see on websites like including contact information for the user to use if they have an inquiry or want to take part in an event such as a contest or giveaway.
+     For the contacts I used an email and phone number linked in using the <a> element that links other sites, pages or links via creating a unique URl .
+     The href is included in the <a> element as it's the actual link and text that you can select which takes you to where it says it will take you. For my site, by pressing the phone number it will pop up with a message on your phone asking if you want  to call the number or not. If you press the email, it will open up whatever program you use to view emails which could be outlook, gmail or yahoo and start a draft for you to write to the email shown on the website.
+     I added the copyright at the bottom because copyright is added at the end of everything whether it's a website, video or post so that it shows that it's original and you'd be in troubble if you steal it or use it as your own.
+-->
+
+<div class="textbox">
+  <p class="finalbox">Give us a review!</p>
+    <form id="form1">
+      <label for="name">First name:</label><br>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="surname">Last name:</label><br>
+      <input type="text" id="surname" name="surname"><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="text" id="email" name="email"><br><br>
+
+
+      <label for="type">Did you like the website?:</label>
+      <input type="radio" id="positive" name="positive" value="positive"> Yes
+      <input type="radio" id="negative" name="negative" value="negative"> No <br><br>
+
+
+      <label for="email">Your thoughts on the website:</label><br>
+      <input type="text" id="email" name="email"><br>
+
+      <button id="addUserFeedbackButton">Submit!</button>
+    </form>
+    <h2 id="Thanks for review!"></h2>
+  </div>
+  <!--This section contains form that allows users to send feedback. Headings of the form
+  items are "labels". Each label has "input" type, in other words how users can fill in
+  or respond to the label. It also contains name or value and id, which is later used
+  in the script to add commands to it.
+  To be able to send information to database, form contains "UserFeedbackButton".
+  To receive informational short message after sending, <p> with id "Thanks for review!"
+  as been put underneath the form.-->
+
+<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+
+ <script>
+ let db = new PouchDB("usersData");
+
+ function addUserFeedback(event) {
+   event.preventDefault();
+   let theDate = new Date().toISOString();
+
+ /* Database PouchDB was added to the website to be able to save data sent
+ through the form. */
+
+   let radioButtonValue;
+   if (document.getElementById("positive").checked) {
+       radioButtonValue = document.getElementById("positive").value;
+   } else if (document.getElementById("negative").checked) {
+       radioButtonValue = document.getElementById("negative").value;
+   }
+
+/* Instructions for radio button were added. */
+
+   let user = {
+     _id: theDate,
+     name: document.getElementById("name").value,
+     surname: document.getElementById("surname").value,
+     type: radioButtonValue,
+     email: document.getElementById("email").value
+   };
+
+/* All values that need to be stored in database has been put inside "user" property.
+Any written value from input will be stored if mentioned in this section. */
+
+   db.put(user);
+   document.getElementById("form1").style.display = "none";
+   thankYouText();
+   }
+
+   function thankYouText() {
+     document.getElementById("Thanks for review!").innerHTML= "Thanks for review!";
+   }
+ document.getElementById("addUserFeedbackButton").addEventListener("click", addUserFeedback);
+/* Command db.put(user) makes all content written above stored into the database. When user
+clicks Submit button, it triggers the function "thankYouText()" and message appears underneath
+the form. */
+ </script>
+</div>
+
+<footer> Website made by T.R Creations
+         2022 Copyrights
+       <img class="logo" src="img/logo.jpg" alt="logo">
+     </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!--<!DOCTYPE html> is used to tell the browser that the page you want it to load is a HTML page.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homepage for the Naruto Encyclopedia" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
+    <title> Naruto Encyclopedia </title>
+  </head>
+<body class="home">
+
+<!-- The <head> element is placed between the <html> and <body> elements, this contains the metadata of the html as shown in the <head> element above.
+     The <body> consists of the htmls documents such as the headings, paragraphs, images and etc.
+     The <title> element is where you write the name of the html page, which is found in the <head> element.
+-->
+
+  <div>
+  <h1 id="mainheading"> Naruto Encyclopedia </h1>
+  </div>
+
+ <!--The <h> element is used here so that it shows what info is going to be shown under it.
+ -->
+
+ <div class="container">
+   <a href="homepage.html" class="item">Home page</a>
+   <a href="characterpage.html" class="item">About The Show</a>
+   <a href="gamepage.html" class="item">Game</a>
+   <a href="contactspage.html" class="item">Contacts Page</a>
+ </div>
+
+<!--I used the <a> element here so that the two pages are linked to this page,so the user can go back and forth between the pages.
+    -->
+
+<h2 id="heading"> Welcome </h2>
+<p> Welcome to the website, here you'll get introduced to the show Naruto Shippuden where you'll meet characters from the show, learning a bit about them and also get a chance to play a fun game on the game page. </p>
+
+<!--The <p> element is used here so that I can put in text such as a summary of the movie and close it, so that it tells the code that it's finished with that element.
+    -->
+
+<h3 id="heading"> Trailer for the show </h3>
+<video autoplay="autoplay" loop="loop" muted defaultMuted playsinline width="320" height="240" controls width="25%">
+
+<!-- Autoplay was added so that the video starts up for the user because without this attribute the play button was hard to select for mobile users and the video wasn't shown
+     unless the play button was pressed. The video has been put on loop so that it's easier for the user to rewatch the video if they wanted to after watching it for the first
+     time. The video is muted by default because the user(s) might get a jump scare with the audio playing without their control especially if their volume was on high. -->
+
+<source src="vid/naruto_shippuden_trailer1.webm" type="video/webm" />
+<source src="vid/naruto_shippuden_trailer2.ogv" type="video/ogv" />
+<source src="vid/naruto_shippuden_trailer3.mp4" type="video/mp4" />
+<p> Sorry to tell you that your broswer does not support the video element shown on the page. However there is an alternative way of viewing the video, which is by clicking the link below.
+<a href="video/mp4.mp4"> Naruto Shippuden Trailer</a></p>
+</video>
+
+<!--The <video> element is put here so that I can include a video on my webpage. There are 3 formats here, so that on the broswer if one format doesn't work, the browser can then use one of that other two that it can use.
+  The <a> element is then used after that, so that if the browser doesn't support either of the formats, they can view it on a seperate tab by clicking on the link given. In other words, this is called the fallback.
+  The video is controled within the <video> element where the size of the video is set and if I wanted the video to play by itself and look, I can use values like loop or autoplay to control it, or just leave it so that the user can choose whether to play the video or not.
+  </video> is put at the end after the video element is put in, so that it tells the browser that the <video> section is done so that elements after that such as for this example the <footer> becomes visible for the user.
+-->
+
+<footer> Website made by T.R Creations
+         2022 Copyrights
+       <img class="logo" src="img/logo.jpg" alt="logo">
+     </footer>
+
+</body>
+</html>
+
+<!--</body> element is used to close the <body> of the page and </html> is used to tell the browser that's the end of page.
+-->
+
+<!-- </html> is used to close the the <html> tag in other words end it -->
